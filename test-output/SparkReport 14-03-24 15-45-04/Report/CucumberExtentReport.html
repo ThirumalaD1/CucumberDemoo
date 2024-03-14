@@ -1,0 +1,943 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 14, 2024 03:45:04 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Accountregistration</p>
+            <p class="text-sm">
+              <span>3:45:04 pm</span> / <span>00:00:02:950</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Accountregistration</h5>
+<span class='badge badge-success'>03.14.2024 3:45:04 pm</span>
+<span class='badge badge-danger'>03.14.2024 3:45:07 pm</span>
+<span class='badge badge-default'>00:00:02:950</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Successful Account Registration</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="Stepdefinitions.Accountregistrationsteps.the_user_navigates_to_register_account_page()">
+                <span>Given the user navigates to Register Account page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e4bf4639528e708fd3d4a8bab9091bbf, clickElement {id=f.80A702C9793DABAE426F8BE3B03F4302.d.6320AABE388FB034F12577315223FFB5.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\justi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.5:4444/sessi..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (e4bf4639528e708fd3d4a8bab9091bbf)] -> xpath: //span[text()='My Account']]
+Session ID: e4bf4639528e708fd3d4a8bab9091bbf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at Pageobjects.HomePage.clickMyAccount(HomePage.java:33)
+	at Stepdefinitions.Accountregistrationsteps.the_user_navigates_to_register_account_page(Accountregistrationsteps.java:24)
+	at ?.the user navigates to Register Account page(file:///C:/Users/justi/eclipse-workspace/CucumberDemoo/src/test/java/Featurefiles/Accountreg.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Stepdefinitions.Hookss.addscreencapture(io.cucumber.java.Scenario)</span>
+      <div>Successful Account Registration
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="Stepdefinitions.Accountregistrationsteps.the_user_enters_the_details_into_below_fields(io.cucumber.datatable.DataTable)">
+                <span>When the user enters the details into below fields</span>
+      <div><table class='markup-table table '><tr><td>firstName</td><td>John</td></tr><tr><td>lastName</td><td>Kenedy</td></tr><tr><td>telephone</td><td>1234567890</td></tr><tr><td>password</td><td>test@123</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Stepdefinitions.Accountregistrationsteps.the_user_selects_privacy_policy()">
+                <span>And the user selects Privacy Policy</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Stepdefinitions.Accountregistrationsteps.the_user_clicks_on_continue_button()">
+                <span>And the user clicks on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Stepdefinitions.Accountregistrationsteps.the_user_account_should_get_created_successfully()">
+                <span>Then the user account should get created successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Title of your feature</p>
+            <p class="text-sm">
+              <span>3:45:07 pm</span> / <span>00:00:03:978</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Title of your feature</h5>
+<span class='badge badge-success'>03.14.2024 3:45:07 pm</span>
+<span class='badge badge-danger'>03.14.2024 3:45:11 pm</span>
+<span class='badge badge-default'>00:00:03:978</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Successful login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Stepdefinitions.Loginsteps.user_navigate_to_the_login_page()">
+                <span>Given user navigate to the login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Loginsteps.user_entered_valid_username_and_password_username_password(java.lang.String,java.lang.String)">
+                <span>When user entered valid username and password (username="raghurama@gmail.com", password="Testing1"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Loginsteps.click_on_the_login_button()">
+                <span>And click on the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Loginsteps.user_should_see_the_myaccountpage()">
+                <span>Then user should see the Myaccountpage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login with DDT</p>
+            <p class="text-sm">
+              <span>3:45:11 pm</span> / <span>00:00:14:906</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login with DDT</h5>
+<span class='badge badge-success'>03.14.2024 3:45:11 pm</span>
+<span class='badge badge-danger'>03.14.2024 3:45:26 pm</span>
+<span class='badge badge-default'>00:00:14:906</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>Sucessfull and unsucessful login</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Sucessfull and unsucessful login</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigate to the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user redirecting to the Myaccount by passing email and password with excel row"1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>Sucessfull and unsucessful login</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user navigate to the login page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [1ce2be423494e8402341c49419253695, clickElement {id=f.B3898E79199617313BF5DE24B5932384.d.17B8603BAEC5EBB1DD56349512985BA0.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\justi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64307}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.5:4444/sessi..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (1ce2be423494e8402341c49419253695)] -> xpath: //span[text()='My Account']]
+Session ID: 1ce2be423494e8402341c49419253695
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at Pageobjects.HomePage.clickMyAccount(HomePage.java:33)
+	at Stepdefinitions.Loginsteps.user_navigate_to_the_login_page(Loginsteps.java:37)
+	at ?.user navigate to the login page(file:///C:/Users/justi/eclipse-workspace/CucumberDemoo/src/test/java/Featurefiles/LoginDDT.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Stepdefinitions.Hookss.addscreencapture(io.cucumber.java.Scenario)</span>
+      <div>Sucessfull and unsucessful login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user redirecting to the Myaccount by passing email and password with excel row"2"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="43"><span class="badge log fail-bg mr-2">Fail</span>Sucessfull and unsucessful login</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user navigate to the login page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [43192076d364843a302a322b285ba0f9, clickElement {id=f.68D1FB7806C6EE7FC6E16835E03E0AB9.d.AD02F3B2FEECB5809B6BD176933FE171.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\justi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.5:4444/sessi..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (43192076d364843a302a322b285ba0f9)] -> xpath: //span[text()='My Account']]
+Session ID: 43192076d364843a302a322b285ba0f9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at Pageobjects.HomePage.clickMyAccount(HomePage.java:33)
+	at Stepdefinitions.Loginsteps.user_navigate_to_the_login_page(Loginsteps.java:37)
+	at ?.user navigate to the login page(file:///C:/Users/justi/eclipse-workspace/CucumberDemoo/src/test/java/Featurefiles/LoginDDT.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Stepdefinitions.Hookss.addscreencapture(io.cucumber.java.Scenario)</span>
+      <div>Sucessfull and unsucessful login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user redirecting to the Myaccount by passing email and password with excel row"3"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>Sucessfull and unsucessful login</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user navigate to the login page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [07cd9aad4e06a88660946ab585600ab5, clickElement {id=f.9E458AECBDFC821BFCE0223E414BE471.d.51DAD55AB70DA549A5630EC4B0D9572C.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\justi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.5:4444/sessi..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (07cd9aad4e06a88660946ab585600ab5)] -> xpath: //span[text()='My Account']]
+Session ID: 07cd9aad4e06a88660946ab585600ab5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at Pageobjects.HomePage.clickMyAccount(HomePage.java:33)
+	at Stepdefinitions.Loginsteps.user_navigate_to_the_login_page(Loginsteps.java:37)
+	at ?.user navigate to the login page(file:///C:/Users/justi/eclipse-workspace/CucumberDemoo/src/test/java/Featurefiles/LoginDDT.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Stepdefinitions.Hookss.addscreencapture(io.cucumber.java.Scenario)</span>
+      <div>Sucessfull and unsucessful login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user redirecting to the Myaccount by passing email and password with excel row"4"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="57"><span class="badge log fail-bg mr-2">Fail</span>Sucessfull and unsucessful login</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user navigate to the login page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c80e6608028343b0bd8c95c2c94e1c7c, clickElement {id=f.99128EC65BB6F2DA8362A47AE58278A9.d.C8573D8D44EB0B57384C119CBDB75403.e.21}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\justi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.5:4444/sessi..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (c80e6608028343b0bd8c95c2c94e1c7c)] -> xpath: //span[text()='My Account']]
+Session ID: c80e6608028343b0bd8c95c2c94e1c7c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at Pageobjects.HomePage.clickMyAccount(HomePage.java:33)
+	at Stepdefinitions.Loginsteps.user_navigate_to_the_login_page(Loginsteps.java:37)
+	at ?.user navigate to the login page(file:///C:/Users/justi/eclipse-workspace/CucumberDemoo/src/test/java/Featurefiles/LoginDDT.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Stepdefinitions.Hookss.addscreencapture(io.cucumber.java.Scenario)</span>
+      <div>Sucessfull and unsucessful login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user redirecting to the Myaccount by passing email and password with excel row"5"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Given the user navigates to Register Account page</a>
+<div class="">
+<span class="badge badge-default">Accountregistration.Successful Account Registration.Given the user navigates to Register Account page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='38'>Given user navigate to the login page</a>
+<div class="">
+<span class="badge badge-default">Login with DDT.Sucessfull and unsucessful login.Given user navigate to the login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='45'>Given user navigate to the login page</a>
+<div class="">
+<span class="badge badge-default">Login with DDT.Sucessfull and unsucessful login.Given user navigate to the login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='52'>Given user navigate to the login page</a>
+<div class="">
+<span class="badge badge-default">Login with DDT.Sucessfull and unsucessful login.Given user navigate to the login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='59'>Given user navigate to the login page</a>
+<div class="">
+<span class="badge badge-default">Login with DDT.Sucessfull and unsucessful login.Given user navigate to the login page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:45:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful Account Registration</a>
+<div class="">
+<span class="badge badge-default">Accountregistration.Successful Account Registration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:45:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='16'>Successful login</a>
+<div class="">
+<span class="badge badge-default">Title of your feature.Successful login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 14, 2024 03:45:04 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 14, 2024 03:45:26 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='28%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='71%'><b>5</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='45%'><b>11</b> steps passed</small></div>
+<div>
+<small data-tooltip='20%'><b>5</b> steps failed,
+<b>8</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Accountregistration":2.95,"Title of your feature":3.978,"Login with DDT":14.906
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@sanity</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 5,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 11,
+failGrandChild: 5,
+warningGrandChild: 0,
+skipGrandChild: 8,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
