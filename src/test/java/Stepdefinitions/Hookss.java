@@ -28,12 +28,12 @@ public class Hookss {
 		driver.manage().window().maximize();
 	}
 		
-	@After	
-	public void teardown(io.cucumber.java.Scenario scenario) {
-		
-		driver.quit();
-		
-	}
+//	@After	
+//	public void teardown(io.cucumber.java.Scenario scenario) {
+//		
+//		driver.quit();
+//		
+//	}
 	@AfterStep
 	public void addscreencapture(io.cucumber.java.Scenario scenario) {
 		if (scenario.isFailed()) {

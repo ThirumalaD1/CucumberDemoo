@@ -7,9 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( 
-					features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles"}, 
+					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles"}, 
 					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\LoginDDT.feature"},
 					//features= {"@target/rerun.txt"},
+		            features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Searchproduct.feature"},
 					glue="Stepdefinitions",
 					dryRun = false,
 					//publish=true,
