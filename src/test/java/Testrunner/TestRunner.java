@@ -9,9 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions( 
 					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles"}, 
 					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\LoginDDT.feature"},
-					//features= {"@target/rerun.txt"},
-		            features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Searchproduct.feature"},
-					glue="Stepdefinitions",
+					features= {"@target/rerun.txt"},
+		            //features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Searchproduct.feature"},
+					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Addtocart.feature"},
+		            glue="Stepdefinitions",
 					dryRun = false,
 					//publish=true,
 					monochrome=false,
