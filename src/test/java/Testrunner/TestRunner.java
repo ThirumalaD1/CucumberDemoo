@@ -10,11 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles"}, 
 					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\LoginDDT.feature"},
 					//features= {"@target/rerun.txt"},
+		              features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Productcompare.feature"},
 		            //features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Searchproduct.feature"},
 					//features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Addtocart.feature"},
+		          //  features= {"C:\\Users\\justi\\eclipse-workspace\\CucumberDemoo\\src\\test\\java\\Featurefiles\\Searchproduct.feature"},
 		            glue="Stepdefinitions",
 					dryRun = false,
-					//publish=true,
+					//publish=false,
 					monochrome=false,
 					plugin = {"pretty","html:reports/cucureport.html",
 							  "rerun:target/rerun.txt",
@@ -22,6 +24,7 @@ import io.cucumber.junit.CucumberOptions;
 					//tags = "@regression" 
 					
 			    )
+
 public class TestRunner {
 	
 }
