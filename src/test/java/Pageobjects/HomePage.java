@@ -52,6 +52,20 @@ public class HomePage extends BasePage {
 		btnSearch.click();
 	}
 	
+	public boolean checksearchfieldplaceholdertext() {
+		try {
+		if (txtSearchbox.getAttribute("placeholder").equals("Search")) {
+			return true;
+		}else {
+			return false;
+		}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+			
+		}		
+	}
+	
 	
 	
 }

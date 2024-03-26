@@ -593,3 +593,11 @@
 12:36:45.678 [main] INFO  - Entering username and pass
 12:36:45.886 [main] INFO  - Clicking on login button
 12:36:46.546 [main] INFO  - Checking myaccount page existense
+20:33:09.666 [main] INFO  - Nav to login page
+20:33:10.676 [main] INFO  - Entering username and pass
+20:33:11.012 [main] INFO  - Clicking on login button
+20:33:11.983 [main] INFO  - Checking myaccount page existense
+21:45:10.133 [main] INFO  - Nav to login page
+21:45:10.967 [main] INFO  - Entering username and pass
+21:45:11.256 [main] INFO  - Clicking on login button
+21:45:12.089 [main] INFO  - Checking myaccount page existense
