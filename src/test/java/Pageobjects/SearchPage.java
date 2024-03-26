@@ -180,6 +180,9 @@ public void click_prodcomplink() {
 	productcomptxt.click();
 }
 		
+public void set() {
+	
+}
 
 
 
