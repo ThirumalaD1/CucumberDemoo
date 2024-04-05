@@ -8,7 +8,7 @@ Feature: Search product
   #And user enter the product name in the search
   #And Click on the search button
   #Then user should see the product in the result
-  
+  @testcaseid(2)
   Scenario: Verify the product details is displayed in the product details page
   And user enter the product name "iPhone" in the search
   And Click on the search button
@@ -19,12 +19,14 @@ Feature: Search product
   | Productbrand | Apple                    |
   | Productcode  | Product Code: product 11 |
   
+  @testcaseid(3)
   Scenario: Verify search product through search criteria field
   And Click on the search button
   When user enter the below given product name in search criteria and click on search button
   | Productname | mac |
   Then user should see the product "MacBook Pro" in the result
   
+  @testcaseid(4)
   Scenario: Verify placeholder text in the product search field and in the search criteria field
     Then check the product search field placeholder is displayed on the app when no text is entered
     And Click on the search button

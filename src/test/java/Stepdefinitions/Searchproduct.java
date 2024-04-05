@@ -15,8 +15,9 @@ import io.cucumber.java.en.When;
 public class Searchproduct {
 	public HomePage hp;
 	SearchPage sp;
+	String pdname;
 	Map<String, String> datam;
-
+	boolean relpdexists;
 	@Then("Click on the search button")
 	public void click_on_the_search_button() {
 		hp = new HomePage(Baseclass.getDriver());
@@ -143,6 +144,50 @@ public class Searchproduct {
 	public void click_on_the_comparision_link() {
 	    sp.click_prodcomplink();
 	}
+
+	
+	
+
+	@When("Verify the product {string} is displayed in the Related Products section")
+	public void verify_the_product_is_displayed_in_the_related_products_section(String pd) {
+		 pdname = pd;
+		System.out.println(pd);
+				boolean relpdexists = sp.relatedproducts(pdname);
+				
+				Assert.assertEquals(relpdexists, true);
+			
+	}	
+	
+	
+	
+	@When("Click on Add to wishlist icon of the product")
+	public void click_on_add_to_wishlist_icon_of_the_product() {
+	    if (sp.relatedproducts(pdname)) {
+	    	sp.click_wishlistbtn();
+		} else {
+            Assert.fail();
+		}
+		
+	}
+	@Then("validate wishlist link is displayed in the success message")
+	public void validate_wishlist_link_is_displayed_in_the_success_message() {
+	    if (sp.checkConfMsg()) {
+			Assert.assertEquals(sp.checkwishliskdisplayed(), true);
+		}else {
+			Assert.fail();
+		}
+		
+	}
+	
+
+	@Then("click on the wishlist link in the success msg")
+	public void click_on_the_wishlist_link_in_the_success_msg() {
+	    sp.click_wishlink();
+	}
+
+
+
+
 
 
 

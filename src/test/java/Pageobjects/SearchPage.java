@@ -1,5 +1,7 @@
 package Pageobjects;
 import java.util.List;
+
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -46,6 +48,11 @@ public class SearchPage extends BasePage
 		
 		@FindBy(xpath="//div/a[contains(text(),'product comparison')]") WebElement productcomptxt;
 		
+		@FindBy(xpath="//div[@class='product-thumb transition']/div/a/img") List<WebElement> relatedproducts;
+		
+		@FindBy(xpath="//div[@class='product-thumb transition']/div[3]/button[2]") WebElement Addtowishlist;
+		
+		@FindBy(xpath="//a[normalize-space()='wish list']") WebElement wislistlink;
 		
 		
 		public void setsearchcriteria(String searchcri)
@@ -185,5 +192,33 @@ public void set() {
 }
 
 
+public boolean relatedproducts(String pd) {
+	boolean flag=false;
+	for (int i = 0; i < relatedproducts.size(); i++) {
+
+		if (relatedproducts.get(i).getAttribute("title").contains(pd)) {
+		return flag= true;	
+		} else {
+        return flag= false;
+		}
+	}
+	return flag;
+}
+
+public void click_wishlistbtn() {
+	Addtowishlist.click();
+}
+
+public boolean checkwishliskdisplayed() {
+	try {
+		return wislistlink.isDisplayed();
+	} catch (Exception e) {
+		return false;
+	}
+}
+
+public void click_wishlink() {
+	wislistlink.click();
+}
 
 }
