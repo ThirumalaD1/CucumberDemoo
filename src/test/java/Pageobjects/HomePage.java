@@ -2,11 +2,14 @@ package Pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
-	public HomePage(WebDriver driver) {
+	WebDriver driver;
+	
+		public HomePage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -26,8 +29,15 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//div[@id='search']//button[@type='button']") //For Search Product Test
 	WebElement btnSearch;
 	
+	@FindBy(xpath="//a[normalize-space()='Desktops']") WebElement desktops;
 	
-		
+	@FindBy(xpath="//a[normalize-space()='Show All Desktops']") WebElement showAllDesktops;
+
+	@FindBy(xpath="//ul[@class='breadcrumb']//a[contains(text(),'Desktops')]") WebElement desktopslink;
+	
+	@FindBy(xpath="//a[@id='compare-total']") WebElement productComparelink;
+	
+	
 	// Action Methods
 	public void clickMyAccount() {
 		lnkMyaccount.click();
@@ -64,6 +74,26 @@ public class HomePage extends BasePage {
 			return false;
 			
 		}		
+	}
+	
+	public boolean isDesktopexist() {
+		try {
+		return desktops.isDisplayed();
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public void hoverdesktopoptions() {
+		try {
+			act.moveToElement(desktops).perform();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void click_ShowallDsektops() {
+		showAllDesktops.click();
 	}
 	
 	
