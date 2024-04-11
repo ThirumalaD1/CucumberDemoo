@@ -47,12 +47,10 @@ public class Hookss {
             }
 
 		//driver.quit();
-		if (!scenario.isFailed()) {
+		if(!scenario.isFailed()) {
 			Testrailm.addTestresultsforTC(testcaseid, Testrailm.Test_Rail_Pass_status, "");
 		}else if (scenario.isFailed()) {
-			
 			Testrailm.addTestresultsforTC(testcaseid, Testrailm.Tes_Rail_Fail_status, "Failed");
-			
 		}
         }
 		

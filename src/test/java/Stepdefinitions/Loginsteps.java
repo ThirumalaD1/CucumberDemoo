@@ -112,12 +112,45 @@ public class Loginsteps {
 				Assert.assertTrue(true);;
 			}
 		}
+	}
 	    
+	    @Given("click Forgotten Password link from Login page \\(Validate ER-{int})")
+		public void click_forgotten_password_link_from_login_page_validate_er(Integer int1) {
+		    
+		}
+		@Given("enter the email address of an existing account for which you have forgot the password")
+		public void enter_the_email_address_of_an_existing_account_for_which_you_have_forgot_the_password() {
+		    
+		}
+		@Given("Click on Continue button")
+		public void click_on_continue_button() {
+		    
+		}
+		@Given("Check the registered email address for which the password got reset")
+		public void check_the_registered_email_address_for_which_the_password_got_reset() {
+		    
+		}
+		@Given("Click on the link for resseting the password from the received email body")
+		public void click_on_the_link_for_resseting_the_password_from_the_received_email_body() {
+		    
+		}
+		@Given("Enter new password as {string} into the password and Confirm fields")
+		public void enter_new_password_as_into_the_password_and_confirm_fields(String string) {
+		    
+		}
+		@Given("Enter the email address into the E-Mail address field and the new resetted password into the Password field")
+		public void enter_the_email_address_into_the_e_mail_address_field_and_the_new_resetted_password_into_the_password_field() {
+		    		}
+		@Given("Click on Login button")
+		public void click_on_login_button() {
+		    
+		}
+
 		
-		
+	
 	}
 
-	}
+	
 
 
 

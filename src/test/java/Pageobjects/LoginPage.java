@@ -19,6 +19,9 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//input[@value='Login']")
 	WebElement btnLogin;
 
+	@FindBy(xpath = "//a[text()='Forgotten Password']")
+	WebElement forgotpasslink;
+	
 
 	public void setEmail(String email) {
 		txtEmailAddress.sendKeys(email);
@@ -31,6 +34,12 @@ public class LoginPage extends BasePage {
 	public void clickLogin() {
 		btnLogin.click();
 	}
+	
+public void click_forgotpasslink() {
+	forgotpasslink.click();
+}
+	
+
 
 	
 
