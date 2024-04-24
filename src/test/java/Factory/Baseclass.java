@@ -91,6 +91,7 @@ public class Baseclass {
 		
 	}
 	public static void vd(){
+		String v="Thitu";
 	}	
 	
 	
