@@ -90,6 +90,8 @@ public class Baseclass {
 		return ranst+"@"+rannu;
 		
 	}
+	public static void vd(){
+	}	
 	
 	
 }
